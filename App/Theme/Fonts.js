@@ -6,7 +6,7 @@ const size = {
   h3: 30,
   input: 18,
   regular: 17,
-  medium: 14,
+  medium: 16,
   small: 12,
 }
 
@@ -23,4 +23,7 @@ export default StyleSheet.create({
   normal: {
     fontSize: size.regular,
   },
+  medium:{
+    fontSize:size.medium,
+  }
 })

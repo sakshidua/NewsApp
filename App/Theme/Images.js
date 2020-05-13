@@ -3,5 +3,8 @@
  */
 
 export default {
-  logo: require('App/Assets/Images/TOM.png'),
+  logo: require('App/Assets/Images/logo.png'),
+  welcome: require('App/Assets/Images/Welcome.png'),
+  google:require('App/Assets/Images/google.png'),
+  facebook:require('App/Assets/Images/facebook.png')
 }

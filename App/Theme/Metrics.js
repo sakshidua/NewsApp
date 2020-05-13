@@ -1,7 +1,6 @@
-/**
- * This file contains metric values that are global to the application.
- */
+import {Dimensions, Platform} from 'react-native'
 
+const { width, height } = Dimensions.get('window')
 // Examples of metrics you can define:
 export const tiny = 5
 export const small = tiny * 2 // 10
@@ -15,6 +14,7 @@ export default {
   mediumBottomMargin: {
     marginBottom: medium,
   },
+  screenWidth: width < height ? width : height,
 
   tinyVerticalMargin: {
     marginVertical: tiny,

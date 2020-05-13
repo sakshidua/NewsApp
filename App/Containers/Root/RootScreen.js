@@ -10,7 +10,7 @@ import { Helpers } from 'App/Theme'
 class RootScreen extends Component {
   componentDidMount() {
     // Run the startup saga when the application is starting
-    this.props.startup()
+    // this.props.startup()
   }
 
   render() {

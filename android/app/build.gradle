@@ -127,7 +127,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.boilerplate"
+        applicationId "com.newsApp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -177,6 +177,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-fbsdk')
+    implementation project(':react-native-vector-icons')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
 

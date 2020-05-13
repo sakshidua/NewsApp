@@ -1,6 +1,7 @@
 import { applyMiddleware, compose, createStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import { persistReducer, persistStore } from 'redux-persist'
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 /**
  * This import defaults to localStorage for web and AsyncStorage for react-native.
@@ -37,7 +38,7 @@ export default (rootReducer, rootSaga) => {
   // Redux persist
   const persistedReducer = persistReducer(persistConfig, rootReducer)
 
-  const store = createStore(persistedReducer, compose(...enhancers))
+  const store = createStore(persistedReducer, composeWithDevTools(...enhancers))
   const persistor = persistStore(store)
 
   // Kick off the root saga
